@@ -7,7 +7,7 @@ class api
         $header = getallheaders();
         if($header['token']=='123456789987654321'){
             $arquivo = $_FILES['arquivo'];
-            if(move_uploaded_file($arquivo['tmp_name'],"/dados_hd/Projetos/API/assets/{$arquivo['name']}")){
+            if(move_uploaded_file($arquivo['tmp_name'],"/dados_hd/Projetos/API/api/assets/{$arquivo['name']}")){
                 $resposta = json_encode(['Resposta'=> 'Arquivo Inserido com Sucesso']);
                 // echo $resposta;
                 return $resposta; 
