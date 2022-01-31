@@ -3,8 +3,9 @@
 require ('api.php');
 
 function chamaAPI(){
-    $API = new api();
-    $API->saveArchive();
+    $token = '123456789987654321';
+    $API = new apiUploadArquivos($token);
+    $API->apiArchive();
 
 }
 
